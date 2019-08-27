@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    margin: 0 auto;
+    color: #000;
+    font-family: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 11pt;
+    line-height: 1.65em;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    
+
+}
+
+header {
+
+}
+
+nav {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+form {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 51, 0),white 10%, peru);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 120px;
+
+}
+
+.btn-login, 
+.btn-newUsr {
+    border-radius: 0 3px;
+    width: 5em;
+    color: yellowgreen;
+    background-color: darkred;
+
+}
+
+.btn-login : hover, 
+.btn-newUsr: hover,
+.btn-login : focus, 
+.btn-newUsr: focus,
+ {
+    border-radius: 0 3px;
+    width: 5em;
+    color: khaki;
+    background-color: hotpink;
+    
+}
+
+.menu-mobile {
+    
+}
+
+button {
+    border-radius: 50% 50%;
+}
+
+.add,
+.delete,
+.edit {
+    border-radius: 50% 50%;
+    background-color: rgba(0, 0, 51, 0);
+    color: whitesmoke;
+}
+
+.add,
+.delete,
+.edit,
+.add:focus,
+.delete:focus,
+.edit:focus {
+    border-radius: 50% 50%;
+    background-color: peru;
+    translate: 2s;
+    transform: scale(1.2,1.2);
+
+}
