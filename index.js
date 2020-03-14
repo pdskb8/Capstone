@@ -150,6 +150,26 @@ const store = {
             <input type="text" name="comic_title" id="comic-title" >
             <label for="barcode" >Barcode</label>
             <input type="text"  name="barcode" id="barcode">
+            <label>Publisher</label>
+             <select id = "publisherList">
+               <option value = "marvel">marvel</option>
+               <option value = "dc">dc comics</option>
+               <option value = "afterhours">after hours press</option>
+               <option value = "archie">archie comics</option>
+               <option value = "aspen">aspen MLT</option>
+               <option value = "valiant">valiant entertainment</option>
+               <option value = "boom">boom studios</option>
+               <option value = "image">image comics</option>
+               <option value = "darkhorse">dark horse</option>
+               <option value = "dynamite">dynamite entertainment</option>
+               <option value = "fantagraphics">fantagraphics books</option>
+               <option value = "idw">IDW publishing</option>
+               <option value = "crossgen">crossgen</option>
+               <option value = "aftershock">aftershock comics</option>
+               <option value = "mirage">mirage studios</option>
+               <option value = "topcow">top cow productions</option>
+               <option value = "zenescope">zenoscope entertainment</option>
+             </select>
            
             <input type="submit" value="Add Comic">
             <input type="reset" value="Clear" >
@@ -216,6 +236,7 @@ const store = {
                <option value = "aftershock">aftershock comics</option>
                <option value = "mirage">mirage studios</option>
                <option value = "topcow">top cow productions</option>
+               <option value = "zenescope">zenoscope entertainment</option>
              </select>
       <input type="submit" >
       <input type="reset" >
