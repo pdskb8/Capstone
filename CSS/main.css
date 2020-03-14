@@ -4,92 +4,168 @@
     box-sizing: border-box;
 }
 
-#root {
-    margin: 0 auto;
-    color: #000;
-    font-family: 'Myriad Pro', Arial, Helvetica, Tahoma, sans-serif;
-    font-size: 11pt;
-    line-height: 1.65em;
 
+  
+  
+  /*  Desktop Style */
+  @media screen and (max-width: 778px) {
+    body {
+      background-color: darkslategrey;
+      font-family: 'Myriad Pro', Helvetica, Arial, sans-serif;
+      
 
-    display: grid;
-    grid-template-columns: 1fr;
+    }
+    #root {
+      background-color: darkolivegreen;
+      display: flex;
+      flex-flow: column wrap;
+      align-content: space-between;
+      justify-content: center;
+      /* display: grid;
+      grid-template-columns:1fr 1fr 4fr ;
+      grid-template-rows: 100px auto;
+      grid-gap: 1em;
+      margin: 0em 2em; */
+      margin: auto 0;
+      padding: 0.75em;
+    }
+
+    header {
+      margin: auto;
+      
+      
+    }
+
+    header h1 {
+      font-size: 1.75em;
+      font-weight: bold;
+      font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+      color: gold;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    nav {
+      margin: 1em 2em;
+      text-align: center;
+    }
+
+    nav ul > li {
+      display: inline;
+    }
     
+    main {
+      width: 90vw;
+      height: auto;
+      padding: 1em;
+      margin: auto;
+      background-color: #ddd;
+      border-radius: 3px;
+  
+  
+    }
 
-}
+    li {
+      list-style: none;
+    }
+    #profile {
+      grid-column: 2/3;
+    }
+    form {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      background-color:darkslategray;
+      padding: 5px 10px;
+      margin: 10px;
+      border-radius: 3px;
+      box-shadow: #333 3pt 3pt 3pt 3pt;
 
-header {
+    }
 
-}
+    form label {
+      color: #fff;
+      font-size: 1.1em;
+      text-align: center;
 
-nav {
+    }
+    form h2 {
+      display: inline;
+    }
+    .form-btn {
+      font-size: 9pt;
+      font-family: Verdana, Garamond, Tahoma, sans-serif;
+      background-color: orangered;
+      color:#fff;
+      width: 50px;
+      height: 50px;
+      margin: 2px;
+      padding: 5px;
+      border-radius: 3px;
+      box-shadow: 3px 3px 3px darkgrey;
+      
+    }
+    .form-btn :hover,
+    .form-btn :focus {
+      background-color: orangered;
+      transform: scale(1.2); 
+      
+      
+    }
 
-}
+    footer {
+      
+      background-color: #eee;
+      padding: 2em;
+      text-align: center;
+      
+    }
+  
+    footer ul > li {
+  
+      display:inline;
+      
+     
 
-main {
+    }
 
-}
+    .cmodules,
+    .search-go {
+      background-color: rgba(47,79, 79, 0.9) ;
+      color:whitesmoke;
+      border-radius: 3px;
+      box-shadow: 3px 3px 3px black;
+   
+      padding: 1.5em;
+      margin: 1em;
+    }
 
-footer {
+    .cmodules h1, h2, h3 {
+      color: khaki;
+      text-shadow: 2px 2px 10px black;
+      font-variant-caps: all-small-caps;
+      
+    }
 
-}
+    button {
+      padding: 0.5em;
+      margin: 5px 10px;
+      font-size: 0.7em;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: khaki;
+      color: darkslategrey;
+      border-radius: 3px;
+    }
 
-form {
-    color: #fff;
-    background: linear-gradient(90deg, rgba(0, 0, 51, 0),white 10%, peru);
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    max-width: 120px;
+    .search-go {
+     width: 350px;
+    }
 
-}
+    #map {
+      
+      height: 500px; 
+      position: relative;
+      z-index: 1;
+    }
+  }
 
-.btn-login, 
-.btn-newUsr {
-    border-radius: 0 3px;
-    width: 5em;
-    color: yellowgreen;
-    background-color: darkred;
-
-}
-
-.btn-login : hover, 
-.btn-newUsr: hover,
-.btn-login : focus, 
-.btn-newUsr: focus,
- {
-    border-radius: 0 3px;
-    width: 5em;
-    color: khaki;
-    background-color: hotpink;
-    
-}
-
-.menu-mobile {
-    
-}
-
-button {
-    border-radius: 50% 50%;
-}
-
-.add,
-.delete,
-.edit {
-    border-radius: 50% 50%;
-    background-color: rgba(0, 0, 51, 0);
-    color: whitesmoke;
-}
-
-.add,
-.delete,
-.edit,
-.add:focus,
-.delete:focus,
-.edit:focus {
-    border-radius: 50% 50%;
-    background-color: peru;
-    translate: 2s;
-    transform: scale(1.2,1.2);
-
-}

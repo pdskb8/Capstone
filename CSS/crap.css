@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+  /* Mobile Style */
+  
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 0.75em;
+      grid-column-gap: 0.125em;
+  
+      background-color: aliceblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 10pt;
+      color: midnightblue;
+  
+    }
+  
+    nav {
+      background-image: linear-gradient(-90deg, #000, goldenrod);
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    li {
+      list-style-type: none;
+    }
+  
+    nav > ul li:hover,
+    nav > ul li:focus {
+      cursor: pointer;
+      color: hotpink;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+  
+    header {
+      display: flex;
+      justify-content: center;
+      background-color: cornflowerblue;
+      padding: 0.25em 0.5em;
+  
+  
+  
+    }
+  
+    h1 {
+      font-size: 24pt;
+  
+  
+      }
+  
+    h1, h2 {
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  
+    main {
+  
+      width: 85vw;
+      height: 50vh;
+      padding: 0.5em;
+      margin: 0 auto;
+  
+    }
+  
+  
+    footer {
+      background-color: cornflowerblue;
+      color: #fff;
+      font-size: 0.90em;
+      position: fixed;
+      width: 100vw;
+      height: 50px;
+      bottom: 0;
+  
+    }
+  
+    footer ul > li {
+  
+      display: flex;
+      justify-content: space-evenly;
+      align-self: auto;
+    }
+  
+  
+  /*  Desktop Style */
+  @media screen and (min-width: 778px) {
+    body {
+      font-family: 'Noto Sans HK', sans-serif;
+      background-color: #000;
+  
+      font-size: 11pt;
+  
+  
+  
+    }
+     /* Header Tag CSS */
+    header, header div {
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  
+    }
+    header {
+    /*
+      background-image: url(https://picsum.photos/id/1/960/550);
+      background-repeat: no-repeat;
+      background-position: top center;
+      */
+      /* background: url(https://picsum.photos/id/1/960/550) no-repeat top center; */
+      background-size: cover;
+      padding: 2em 2.5em;
+      height: 15vh;
+      line-height: 1.7em;
+    }
+  
+    header div {
+  
+      background-image: linear-gradient(90deg, #fff, goldenrod);
+      width: 100%;
+      color: #fff;
+      padding-bottom: 1.5em;
+    }
+    header ul  > li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+
+    }
+  
+  
+  
+    h1 {
+      font-size: 2.5rem;
+      color: goldenrod;
+  
+    }
+  
+    h1, h2, h3 {
+      line-height: 2.25rem;
+      font-family: 'Segoe UI', Tahoma, Helvetica, Verdana, sans-serif;
+  
+  
+    }
+  
+  
+    /* Main CSS */
+  
+    main {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #ddd;
+  
+  
+    }
+  
+    main > section {
+      margin: 2em;
+      background-color: #eee;
+      color: #333;
+      padding: 1.75em;
+  
+    }
+    main section h2 {
+      text-transform: uppercase;
+      color: orangered;
+  
+  
+  
+  
+    }
+  
+    main section h2:hover
+    main section h2:focus {
+      transform: scale(1.5, 1.5) skewX(2px);
+  
+  
+  
+  
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+    }
+  
+    /* Navigation */
+  
+     nav {
+       /* background-color: #808080; */
+       background-image: linear-gradient(-45deg, lime, goldenrod);
+       color: navy;
+       margin-top: 0.75em;
+       padding: 10px 0;
+       height: 2.5rem;
+  
+    }
+  
+  
+     nav>ul {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+  
+  
+  
+     }
+  
+     nav a {
+      text-decoration: none;
+  
+     }
+     nav a:focus,
+     nav a:hover {
+      text-decoration: none;
+      color:  hotpink;
+      font-size: 24pt;
+      transition: 0.25s;
+  
+  
+  
+     }
+  
+    nav > ul li:hover,
+    nav > ul li:focus {
+      cursor: pointer;
+      color: hotpink;
+      font-size: 24pt;
+      text-transform: uppercase;
+    }
+  
+     /* Create .dropdown menu */
+     .dropdown ul {
+      display: none;
+      position: absolute;
+    }
+  
+    .dropdown:focus ul,
+    .dropdown:hover ul {
+     display: flex;
+     flex-direction: column;
+     background-color: lime;
+     padding: 10px 8px;
+     border-radius: 0 0 3px 3px;
+     box-shadow: 15px 15px 15px rgba(0, 0,0, 0.5);
+     line-height: 2em;
+  
+  
+    }
+  
+     nav a:visited {
+      color: floralwhite;
+      text-decoration: none;
+    }
+  
+     section {
+       background-color: #eee;
+       padding: 1.5em;
+       margin: 1em;
+  
+     }
+  
+  
+  
+    /* Footer CSS */
+  
+    footer {
+      background-color: #eee;
+      color: #eee;
+      font-size: 1em;
+      height: 4em ;
+      position: relative;
+      width: 100vw;
+  
+     }
+     footer ul {
+       display: flex;
+       justify-content: space-evenly;
+       flex-direction: row;
+       align-content: center;
+       list-style: none;
+       line-height: 60px;
+     }
+     footer li {
+       display: inline-block;
+  
+     }
+     footer ul>li a:hover {
+       text-decoration: none;
+       font-size: 1.25em;
+       color: hotpink;
+     }
+  
+     footer ul>li a:visited {
+        text-decoration: none;
+        color: #eee;
+        font-size: 1.125em;
+     }
+  
+  
+    .cta-btn {
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 1em;
+      margin: 10px 5px;
+      text-decoration: none;
+      background-color: khaki;
+      /* Transitions */
+      transition: 0.25s;
+      border-radius: 3px;
+    }
+    .cta-btn:focus,
+    .cta-btn:hover {
+      background-color: hotpink;
+      border-radius: 3px;
+  
+    }
+  
+    /* Form styling */
+    form {
+      max-width: 400px;
+      margin: 1.75em auto;
+      border: double 1px #8d8d8d;
+      border-radius: 3px;
+      background-color: #333;
+      color: #eee;
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    
+  
+    form span {
+      margin: 0 5px;
+  
+    }
+    /*  Attribute Selector        */
+     input[type="radio"],
+     input[type="checkbox"] {
+       margin-right: 10px;
+       background-color: khaki;
+     }
+  
+     input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  
+    .input-group {
+      margin: 15px 0;
+    }
+  
+    .input-group-flex {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+    }
+  
+    /*
+  
+    */
+  
+    .greet,
+    .questionusr {
+      color: chocolate;
+      font-size: 1.25em;
+  
+    }
+  
+  }

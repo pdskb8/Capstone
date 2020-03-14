@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  background-color: #000;
+  font-size: 11pt;
+
+
+
+}
+
+
+header {
+  grid-area: header;
+  background-color: #ddd;
+  text-align: center;
+
+}
+header img {
+  transform: scale(0.25, 0.25);
+  margin:0;
+  padding: 0;
+  border: #eee solid 6pt;
+
+}
+
+h1 {
+  font-size: 2.125rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: orangered;
+
+}
+
+p {
+  line-height: 1.75em;
+
+}
+
+main {
+  grid-area: main;
+  color: tan;
+  background-color: #ddd;
+  padding: 1.5em 0.75em;
+
+
+}
+ nav {
+   grid-area: nav;
+   background-color: #ddd;
+   text-align: center;
+   padding: 0.5em;
+
+ }
+
+ nav ul>li{
+  display: inline;
+ }
+
+ nav a:hover {
+   transform: scale(20%, 20%);
+   color: lawngreen;
+   text-decoration: none;
+ }
+ section {
+   grid-area: section;
+   background-color: #eee;
+   padding: 0.5em;
+
+ }
+
+.wrapper {
+
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.75em;
+  grid-template-areas:
+  "header   header header header"
+  "section  nav    nav    ."
+  "section  main   main   main"
+  "section  main   main   main"
+  "foot     foot  foot    foot";
+
+ }
+
+ .thumbnails {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: 4fr;
+   grid-gap: 0.5em;
+
+
+   background-color: orangered;
+   padding: 0.5em;
+   border-radius: 45;
+
+ }
+
+ .img_holder {
+   background-color: #eee;
+   border: 0.125em solid goldenrod;
+   padding: 2pt;
+   height: 166px;
+ }
+
+ footer {
+
+   color: aliceblue;
+   grid-area: foot;
+
+ }
